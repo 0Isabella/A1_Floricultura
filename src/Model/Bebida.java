@@ -4,11 +4,13 @@ public class Bebida {
     private String nome;
     private String tipo;
     private float preco;
+    private String descricao;
 
-    public Bebida(String nome,String tipo,float preco) {
+    public Bebida(String nome,String tipo,float preco,String descricao) {
         this.nome = nome;
         this.tipo=tipo;
         this.preco=preco;
+        this.descricao=descricao;
     }
 
     public String getNome() {
@@ -38,6 +40,6 @@ public class Bebida {
     @Override
 
     public String toString(){
-        return nome +" ("+ tipo+") "+ preco;
+        return nome +" ("+ tipo+") "+ preco+" ("+descricao;
     }
 }
