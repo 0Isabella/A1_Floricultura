@@ -10,11 +10,13 @@ public abstract class Flor {
         CONJUNTO; //Como Flor de Cera e Hoya Bella
     }
 
-    public Flor(String cor, int precoUnidade) {
+    private String descricao;
+
+    public Flor(String cor, int precoUnidade, String descricao) {
         this.cor = cor;
         this.precoUnidade = precoUnidade;
+        this.descricao = descricao;
     }
-
     public String getCor() {
         return cor;
     }
@@ -28,5 +30,13 @@ public abstract class Flor {
     }
     public void setPrecoUnidade(int precoUnidade) {
         this.precoUnidade = precoUnidade;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
