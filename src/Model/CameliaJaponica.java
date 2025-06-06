@@ -1,9 +1,10 @@
 package Model;
 
 public class CameliaJaponica extends Flor{
+    private String Cor;
 
-    public CameliaJaponica(String cor, int precoUnidade, String descricao) {
-        super(cor, precoUnidade, descricao);
+    public CameliaJaponica(){
+        super("rosa", (int) 63.90,"simboliza amor, carinho, admiração e, em algumas culturas, até esperança e perseverança");
     }
 
 
