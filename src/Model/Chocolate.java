@@ -1,18 +1,24 @@
 package Model;
 
 public class Chocolate {
-    public String sabor;
-    public float preco;
-    public String marca;
+    private String sabor;
+    private String tipo;
+    private float preco;
+    private String marca;
 
     public Chocolate(String sabor, String tipo, float preco, String marca) {
         this.sabor = sabor;
+        this.tipo = tipo;
         this.preco = preco;
         this.marca = marca;
     }
 
     public String getSabor() {
         return sabor;
+    }
+
+    public String getTipo() {
+        return tipo;
     }
 
     public float getPreco() {
