@@ -1,9 +1,9 @@
 package Model;
 
 public class Cliente {
-    public String nome;
-    public String endereco;
-    public int telefone;
+    private String nome;
+    private String endereco;
+    private int telefone;
 
     public Cliente(String nome, String endereco, int telefone) {
         this.nome = nome;
