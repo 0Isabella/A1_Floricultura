@@ -1,10 +1,10 @@
 package Model;
 
 public class Pedido {
-    public String data;
-    public String lista;
-    public int valorTotal;
-    public String statusDoPedido;
+    private String data;
+    private String lista;
+    private int valorTotal;
+    private String statusDoPedido;
 
     public Pedido(String data, String lista, int valorTotal, String statusDoPedido) {
         this.data = data;

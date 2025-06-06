@@ -3,7 +3,7 @@ package Model;
 public class Pelucia {
     private String nome;
     private String tipo;
-    public float preco;
+    private float preco;
 
     public Pelucia(String nome, String tipo, float preco) {
         this.nome = nome;

@@ -1,9 +1,9 @@
 package Model;
 
 public class Funcionario {
-    String nome;
-    String cargo;
-    int idDeAcesso;
+    private String nome;
+    private String cargo;
+    private int idDeAcesso;
 
     public Funcionario(String nome, String cargo, int idDeAcesso) {
         this.nome = nome;
