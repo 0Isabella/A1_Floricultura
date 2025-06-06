@@ -1,8 +1,9 @@
 package Model;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public abstract class Produto implements Bebidas {
+public abstract class Produto implements Bebidas , Folhagem {
 
     public ArrayList<Bebida>ListadeBebidas;
     public ArrayList<Folhagems>ListadeFolhagem;
@@ -23,5 +24,8 @@ public abstract class Produto implements Bebidas {
 
 
 
+    @Override
+    public void adicionarElemento(List<Integer> lista, Integer elemento) {
 
+    }
 }

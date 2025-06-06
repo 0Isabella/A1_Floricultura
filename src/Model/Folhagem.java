@@ -3,6 +3,6 @@ package Model;
 import java.util.List;
 
 public interface Folhagem {
-    List<Folhagems> obterLista();
+    abstract List<Bebida> obterLista();
     void adicionarElemento(List<Integer> lista, Integer elemento);
 }
