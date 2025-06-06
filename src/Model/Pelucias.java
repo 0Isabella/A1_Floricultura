@@ -3,6 +3,6 @@ package Model;
 import java.util.List;
 
 public interface Pelucias {
-    List<Pelucia> obterLista();
-    void adicionarElemento(List<Integer> lista, Integer elemento);
+    List<Pelucia> obterListap();
+    void adicionarElementop(List<Integer> lista, Integer elemento);
 }
