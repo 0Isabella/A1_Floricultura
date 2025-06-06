@@ -5,7 +5,7 @@ public class Chocolate {
     public float preco;
     public String marca;
 
-    public Chocolate(String nome, String tipo, float preco, String marca) {
+    public Chocolate(String sabor, String tipo, float preco, String marca) {
         this.sabor = sabor;
         this.preco = preco;
         this.marca = marca;
