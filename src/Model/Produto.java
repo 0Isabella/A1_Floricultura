@@ -3,10 +3,11 @@ package Model;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Produto implements Bebidas , Folhagem {
+public abstract class Produto implements Bebidas ,Folhagem,Chocolates {
 
     public ArrayList<Bebida>ListadeBebidas;
     public ArrayList<Folhagems>ListadeFolhagem;
+    public ArrayList<Chocolates>ListadeChocolates;
     public Produto(){
         ListadeBebidas=new ArrayList<>();
         ListadeBebidas.add(new Bebida("Mauby Fizz","Refrigrente", 53.64F,"é feita a partir da casca da árvore mabí, fervida com ervas e especiarias"));
@@ -18,11 +19,26 @@ public abstract class Produto implements Bebidas , Folhagem {
         ListadeFolhagem.add(new Folhagems("Folhagem Alecrim",20.00F));
         ListadeFolhagem.add(new Folhagems("Folhagem Moluccella",20.00F));
         ListadeFolhagem.add(new Folhagems("Gipsófilas",20.00F));
+        ListadeChocolates=new ArrayList<>();
+
+
+
 
     }
 
 
-
+    @Override
+    public List<Bebida> obterListab() {
+        return null;
+    }
+    @Override
+    public List<Folhagem> obterListaf() {
+        return null;
+    }
+    @Override
+    public List<Chocolate> obterListac() {
+        return null;
+    }
 
     @Override
     public void adicionarElemento(List<Integer> lista, Integer elemento) {

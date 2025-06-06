@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface Bebidas {
 
-    List<Bebida> obterLista();
+    List<Bebida> obterListab();
     void adicionarElemento(List<Integer> lista, Integer elemento);
 
 }
