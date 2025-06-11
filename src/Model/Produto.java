@@ -7,8 +7,8 @@ public abstract class Produto implements Bebidas ,Folhagem,Chocolates,Pelucias {
 
     public ArrayList<Bebida>ListadeBebidas;
     public ArrayList<Folhagems>ListadeFolhagem;
-    public ArrayList<Chocolates>ListadeChocolates;
-    public ArrayList<Pelucias>ListadePelucia;
+    public ArrayList<Chocolate> ListadeChocolates;
+    public ArrayList<Pelucia> ListadePelucia;
     public Produto(){
         ListadeBebidas=new ArrayList<>();
         ListadeBebidas.add(new Bebida("Mauby Fizz","Refrigrente", 53.64F,"é feita a partir da casca da árvore mabí, fervida com ervas e especiarias"));
@@ -20,53 +20,56 @@ public abstract class Produto implements Bebidas ,Folhagem,Chocolates,Pelucias {
         ListadeFolhagem.add(new Folhagems("Folhagem Alecrim",20.00F));
         ListadeFolhagem.add(new Folhagems("Folhagem Moluccella",20.00F));
         ListadeFolhagem.add(new Folhagems("Gipsófilas",20.00F));
-        ListadeChocolates=new ArrayList<>();
-        ListadeChocolates.add((Chocolates) new Chocolate("Bombons swiss luxury","chocolate ao leite",184.99F,"lindt"));
-        ListadeChocolates.add((Chocolates) new Chocolate("Coleção mil delícias"," 3 Minitrufas cobertas com chocolate ao leite 3 Minitrufas com pistache cobertas com chocolate ao leite 3 Minitrufas sabor avelã cobertas com chocolate ao leite 3 Minitrufas sabor frutas vermelhas com morango e framboesa cobertas com chocolate amargo",69.90F,"kopenhagen"));
-        ListadeChocolates.add((Chocolates) new Chocolate("Caixa bombons sortidos angel coração","Mil Folhas, Morango com Chocolate, Brigadeiro e Avelã com Leite.",109.99F,"cacau show"));
-        ListadeChocolates.add((Chocolates) new Chocolate("Chocolate vegano","70% cacau",117.90F,"nugali"));
-        ListadePelucia=new ArrayList<>();
-        ListadePelucia.add((Pelucias) new Pelucia("Urso","balão coração", 99.90F));
-        ListadePelucia.add((Pelucias) new Pelucia("Panda","laço preto", 150.90F));
-        ListadePelucia.add((Pelucias) new Pelucia("Coelho","surpresa cenoura", 49.90F));
-        ListadePelucia.add((Pelucias) new Pelucia("Stitch","gigante", 199.90F));
+        ListadeChocolates = new ArrayList<>();
+        ListadeChocolates.add(new Chocolate("Bombons swiss luxury", "sortido", 175.90F, "lindt"));
+        ListadeChocolates.add(new Chocolate("Coleção mil delícias", "trufas com chocolate amargo", 69.90F, "kopenhagen"));
+        ListadeChocolates.add(new Chocolate("Caixa bombons sortidos angel coração", "Mil Folhas, Morango com Chocolate, Brigadeiro e Avelã com Leite.", 109.99F, "cacau show"));
+        ListadeChocolates.add(new Chocolate("Chocolate vegano", "70% cacau", 117.90F, "nugali"));
 
+        ListadePelucia = new ArrayList<>();
+        ListadePelucia.add(new Pelucia("Urso", "balão coração", 99.90F));
+        ListadePelucia.add(new Pelucia("Panda", "laço preto", 150.90F));
+        ListadePelucia.add(new Pelucia("Coelho", "surpresa cenoura", 49.90F));
+        ListadePelucia.add(new Pelucia("Stitch", "gigante", 199.90F));
     }
 
+    public void adicionarBebida(Bebida bebida) {
+        ListadeBebidas.add(bebida);
+    }
+
+    public void adicionarFolhagem(Folhagems folhagem) {
+        ListadeFolhagem.add(folhagem);
+    }
+
+    public void adicionarChocolate(Chocolate chocolate) {
+        ListadeChocolates.add(chocolate);
+    }
+
+    public void adicionarPelucia(Pelucia pelucia) {
+        ListadePelucia.add(pelucia);
+    }
 
     @Override
     public List<Bebida> obterListab() {
-        return null;
+        return ListadeBebidas;
     }
+
     @Override
-    public List<Folhagem> obterListaf() {
-        return null;
+    public List<Folhagems> obterListaf() {
+        return ListadeFolhagem;
     }
+
     @Override
     public List<Chocolate> obterListac() {
-        return null;
+        return ListadeChocolates;
     }
+
     @Override
     public List<Pelucia> obterListap() {
-        return null;
+        return ListadePelucia;
     }
 
 
 
-    @Override
-    public void adicionarElementoc(List<Integer> lista, Integer elemento) {
 
-    }
-    @Override
-    public void adicionarElementof(List<Integer> lista, Integer elemento) {
-
-    }
-    @Override
-    public void adicionarElementop(List<Integer> lista, Integer elemento) {
-
-    }
-    @Override
-    public void adicionarElementob(List<Integer> lista, Integer elemento) {
-
-    }
 }
