@@ -33,6 +33,10 @@ public class Chocolate {
         this.sabor = sabor;
     }
 
+    public  void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     public void setPreco(float preco) {
         this.preco = preco;
     }
