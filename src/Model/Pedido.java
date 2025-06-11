@@ -2,23 +2,17 @@ package Model;
 
 public class Pedido {
     private String data;
-    private String lista;
     private int valorTotal;
     private String statusDoPedido;
 
     public Pedido(String data, String lista, int valorTotal, String statusDoPedido) {
         this.data = data;
-        this.lista = lista;
         this.valorTotal = valorTotal;
         this.statusDoPedido = statusDoPedido;
     }
 
     public String getData() {
         return data;
-    }
-
-    public String getLista() {
-        return lista;
     }
 
     public int getValorTotal() {
@@ -31,10 +25,6 @@ public class Pedido {
 
     public void setData() {
         this.data = data;
-    }
-
-    public void setLista() {
-        this.lista = lista;
     }
 
     public void setValorTotal() {
