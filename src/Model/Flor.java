@@ -3,20 +3,23 @@ package Model;
 public abstract class Flor {
     private String cor;
     private int precoUnidade;
-    private enum tamanho{
+    private Tamanho tamanho;
+    private String descricao;
+
+    public Flor(String cor, int precoUnidade, Tamanho tamanho,String descricao) {
+        this.cor = cor;
+        this.precoUnidade = precoUnidade;
+        //this.tamanho = tamanho;
+        this.descricao = descricao;
+    }
+
+    public enum Tamanho{
         PEQUENO,
         MEDIO,
         GRANDE,
         CONJUNTO; //Como Flor de Cera e Hoya Bella
     }
 
-    private String descricao;
-
-    public Flor(String cor, int precoUnidade, String descricao) {
-        this.cor = cor;
-        this.precoUnidade = precoUnidade;
-        this.descricao = descricao;
-    }
     public String getCor() {
         return cor;
     }
