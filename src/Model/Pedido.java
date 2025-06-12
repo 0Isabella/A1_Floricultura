@@ -2,10 +2,10 @@ package Model;
 
 public class Pedido {
     private String data;
-    private int valorTotal;
+    private double valorTotal;
     private String statusDoPedido;
 
-    public Pedido(String data, String lista, int valorTotal, String statusDoPedido) {
+    public Pedido(String data, String lista, double valorTotal, String statusDoPedido) {
         this.data = data;
         this.valorTotal = valorTotal;
         this.statusDoPedido = statusDoPedido;
@@ -15,7 +15,7 @@ public class Pedido {
         return data;
     }
 
-    public int getValorTotal() {
+    public double getValorTotal() {
         return valorTotal;
     }
 
