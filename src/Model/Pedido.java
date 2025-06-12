@@ -1,9 +1,12 @@
 package Model;
 
+import java.util.List;
+
 public class Pedido {
     private String data;
     private double valorTotal;
     private String statusDoPedido;
+    private List<Object> itensVendidos;
 
     public Pedido(String data, String lista, double valorTotal, String statusDoPedido) {
         this.data = data;
@@ -33,5 +36,13 @@ public class Pedido {
 
     public void setStatusDoPedido() {
         this.statusDoPedido = statusDoPedido;
+}
+
+
+    public void setItensVendidos(List<Object> itensVendidos) {
+        this.itensVendidos = itensVendidos;
+    }
+    public List<Object> getItensVendidos() {
+        return itensVendidos;
     }
 }
