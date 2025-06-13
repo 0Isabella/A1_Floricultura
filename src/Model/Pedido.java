@@ -1,5 +1,6 @@
 package Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Pedido {
@@ -8,10 +9,11 @@ public class Pedido {
     private String statusDoPedido;
     private List<Object> itensVendidos;
 
-    public Pedido(String data, String lista, double valorTotal, String statusDoPedido) {
+    public Pedido(String data, double valorTotal, String statusDoPedido) {
         this.data = data;
         this.valorTotal = valorTotal;
         this.statusDoPedido = statusDoPedido;
+        this.itensVendidos = new ArrayList<>();
     }
 
     public String getData() {
@@ -37,6 +39,7 @@ public class Pedido {
     public void setStatusDoPedido() {
         this.statusDoPedido = statusDoPedido;
 }
+
 
 
     public void setItensVendidos(List<Object> itensVendidos) {

@@ -9,8 +9,8 @@ public abstract class Produto implements Bebidas ,Folhagem,Chocolates,Pelucias {
     public ArrayList<Folhagems>ListadeFolhagem;
     public ArrayList<Chocolate> ListadeChocolates;
     public ArrayList<Pelucia> ListadePelucia;
-    public ArrayList<Cartao> ListadeCartoes;
-    public ArrayList<Flor> ListadeFlores;
+
+    public static ArrayList<Flor> ListadeFlores;
 
     public Produto(){
         ListadeBebidas=new ArrayList<>();
@@ -35,8 +35,7 @@ public abstract class Produto implements Bebidas ,Folhagem,Chocolates,Pelucias {
         ListadePelucia.add(new Pelucia("Coelho", "surpresa cenoura", 49.90F));
         ListadePelucia.add(new Pelucia("Stitch", "gigante", 199.90F));
 
-        ListadeCartoes = new ArrayList<>();
-        ListadeCartoes.add(new Cartao()); //Cartão vazio e padrão :D
+
 
         ListadeFlores = new ArrayList<>();
         ListadeFlores.add(new Amarillis());
@@ -96,13 +95,11 @@ public abstract class Produto implements Bebidas ,Folhagem,Chocolates,Pelucias {
         return ListadePelucia;
     }
 
-    public List<Cartao> obterListaca() {
-        return ListadeCartoes;
-    }
 
-    public List<Flor> obterListaFlores() {
+
+
+    public static List<Flor> obterListaFlores() {
         return ListadeFlores;
     }
-
 
 }

@@ -21,4 +21,12 @@ public class Arranjo extends Buque{
         getFlores().remove(flor);
     }
 
+    public void setComVaso(boolean comVaso) {
+        this.comVaso = comVaso;
+    }
+
+    public void setComEspumaFloral(boolean comEspumaFloral) {
+        this.comEspumaFloral = comEspumaFloral;
+    }
+
 }

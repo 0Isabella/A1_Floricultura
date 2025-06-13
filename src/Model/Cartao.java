@@ -82,8 +82,8 @@ public class Cartao extends Extras {
         InputHelper.InputText("------------------------------------------");
     }
 
-    public static void criarCartao(){
-        listaExtras.add(new Cartao());
+    public static Cartao criarCartao() {
+        return new Cartao();
     }
 
     public static void visualizarCartoes() {
