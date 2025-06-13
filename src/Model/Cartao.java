@@ -7,15 +7,9 @@ public class Cartao extends Extras {
     private String corDoTexto;
 
     public Cartao() {
-        this.frase = solicitarFrase(); //Para pedir quando um novo cartão for criado :D
+        this.frase = solicitarFrase();
         this.corDoTexto = solicitarCor();
     }
-
-    /*public Cartao(String frase, String corDoTexto) {
-        this.frase = frase;
-        this.corDoTexto = corDoTexto;
-    }*/
-
     public String getFrase() {
         return frase;
     }

@@ -290,7 +290,7 @@ public class Menu {
 
     private static Folhagems escolherFolhagem() {
         List<Model.Folhagems> listaFolhagems = produtos.obterListaf();
-        InputHelper.InputText("\n--- Escolha uma Folhagem ---");
+        InputHelper.InputText("Escolha uma Folhagem");
         for (int i = 0; i < listaFolhagems.size(); i++) {
             InputHelper.InputText((i + 1) + "- " + listaFolhagems.get(i).getTipo() + " - R$" + listaFolhagems.get(i).getPreco());
         }
@@ -300,7 +300,7 @@ public class Menu {
 
     private static Pelucia escolherPelucia() {
         List<Model.Pelucia> listaPelucias = produtos.obterListap();
-        InputHelper.InputText("\n--- Escolha um Ursinho (Pelúcia) ---");
+        InputHelper.InputText("Escolha um Ursinho (Pelúcia)");
         for (int i = 0; i < listaPelucias.size(); i++) {
             InputHelper.InputText((i + 1) + "- " + listaPelucias.get(i).getNome() + " - R$" + listaPelucias.get(i).getPreco());
         }
@@ -309,13 +309,12 @@ public class Menu {
     }
 
     private static Cartao escolherCartao() {
-        // Criar um novo cartão sempre que solicitado
-        return Cartao.criarCartao(); // Supondo que Cartao.criarCartao() retorna um novo objeto Cartao
+        return Cartao.criarCartao();
     }
 
 
     public static void mostrarRelatorioVenda() {
-        InputHelper.InputText("\n--- Relatório de Vendas ---");
+        InputHelper.InputText("Relatório de Vendas");
         List<Model.Pedido> listaPedidos = controleCompra.getPedidos();
 
         if (listaPedidos.isEmpty()) {
@@ -325,7 +324,7 @@ public class Menu {
 
         for (int i = 0; i < listaPedidos.size(); i++) {
             Model.Pedido pedido = listaPedidos.get(i);
-            InputHelper.InputText("\nPedido #" + (i + 1));
+            InputHelper.InputText("Pedido #" + (i + 1));
             InputHelper.InputText("Data: " + pedido.getData());
             InputHelper.InputText("Status: " + pedido.getStatusDoPedido());
             InputHelper.InputText("Valor Total: R$" + String.format("%.2f", pedido.getValorTotal()));

@@ -40,8 +40,6 @@ public class Pedido {
         this.statusDoPedido = statusDoPedido;
 }
 
-
-
     public void setItensVendidos(List<Object> itensVendidos) {
         this.itensVendidos = itensVendidos;
     }
