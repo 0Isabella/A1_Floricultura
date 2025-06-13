@@ -96,7 +96,13 @@ public abstract class Produto implements Bebidas ,Folhagem,Chocolates,Pelucias {
         return ListadePelucia;
     }
 
+    public List<Cartao> obterListaca() {
+        return ListadeCartoes;
+    }
 
+    public List<Flor> obterListaFlores() {
+        return ListadeFlores;
+    }
 
 
 }
