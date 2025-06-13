@@ -1,6 +1,6 @@
 package Model;
 
-public class Pelucia {
+public class Pelucia extends Extras {
     private String nome;
     private String tipo;
     private float preco;

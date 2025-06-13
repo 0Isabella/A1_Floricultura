@@ -7,9 +7,10 @@ public abstract class Flor {
     private String descricao;
 
     public Flor(String cor, int precoUnidade, Tamanho tamanho,String descricao) {
+
         this.cor = cor;
         this.precoUnidade = precoUnidade;
-        //this.tamanho = tamanho;
+        this.tamanho = tamanho;
         this.descricao = descricao;
     }
 
@@ -31,6 +32,7 @@ public abstract class Flor {
     public int getPrecoUnidade() {
         return precoUnidade;
     }
+
     public void setPrecoUnidade(int precoUnidade) {
         this.precoUnidade = precoUnidade;
     }
@@ -41,5 +43,13 @@ public abstract class Flor {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public Tamanho getTamanho() {
+        return tamanho;
+    }
+
+    public void setTamanho(Tamanho tamanho) {
+        this.tamanho = tamanho;
     }
 }

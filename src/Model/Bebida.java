@@ -1,6 +1,6 @@
 package Model;
 
-public class Bebida {
+public class Bebida extends Extras {
     private String nome;
     private String tipo;
     private float preco;

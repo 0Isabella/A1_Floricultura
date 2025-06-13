@@ -9,6 +9,9 @@ public abstract class Produto implements Bebidas ,Folhagem,Chocolates,Pelucias {
     public ArrayList<Folhagems>ListadeFolhagem;
     public ArrayList<Chocolate> ListadeChocolates;
     public ArrayList<Pelucia> ListadePelucia;
+    public ArrayList<Cartao> ListadeCartoes;
+    public ArrayList<Flor> ListadeFlores;
+
     public Produto(){
         ListadeBebidas=new ArrayList<>();
         ListadeBebidas.add(new Bebida("Mauby Fizz","Refrigrente", 53.64F,"é feita a partir da casca da árvore mabí, fervida com ervas e especiarias"));
@@ -31,6 +34,30 @@ public abstract class Produto implements Bebidas ,Folhagem,Chocolates,Pelucias {
         ListadePelucia.add(new Pelucia("Panda", "laço preto", 150.90F));
         ListadePelucia.add(new Pelucia("Coelho", "surpresa cenoura", 49.90F));
         ListadePelucia.add(new Pelucia("Stitch", "gigante", 199.90F));
+
+        ListadeCartoes = new ArrayList<>();
+        ListadeCartoes.add(new Cartao()); //Cartão vazio e padrão :D
+
+        ListadeFlores = new ArrayList<>();
+        ListadeFlores.add(new Amarillis());
+        ListadeFlores.add(new CameliaJaponica());
+        ListadeFlores.add(new CoracaoSangrento());
+        ListadeFlores.add(new DaliaGalatica());
+        ListadeFlores.add(new FlorDeCera());
+        ListadeFlores.add(new FlorDeMaio());
+        ListadeFlores.add(new FlorEsqueleto());
+        ListadeFlores.add(new Hatiorarosea());
+        ListadeFlores.add(new Lantana());
+        ListadeFlores.add(new LirioAsiatico());
+        ListadeFlores.add(new LirioDeAranhaVermelha());
+        ListadeFlores.add(new LirioStargazer());
+        ListadeFlores.add(new OrquideaFantasma());
+        ListadeFlores.add(new OrquideaSapatinho());
+        ListadeFlores.add(new OrquídeaGarçaBranca());
+        ListadeFlores.add(new RosaJuliet());
+        ListadeFlores.add(new TrobetasDosAnjos());
+
+
     }
 
     public void adicionarBebida(Bebida bebida) {

@@ -1,6 +1,6 @@
 package Model;
 
-public class Chocolate {
+public class Chocolate extends Extras{
     private String sabor;
     private String tipo;
     private float preco;
