@@ -8,7 +8,7 @@ import java.util.List;
 public class Menu {
 
     private static ControleCompra controleCompra = new ControleCompra();
-    private static Produto produtos = new Produto() {};
+    public static Produto produtos = new Produto() {};
     public static void MenuPrincipal() {
         while (true) {
             InputHelper.InputText("----------------");
@@ -137,9 +137,9 @@ public class Menu {
         for (int i = 0; i < ListadeChocolates.size(); i++) {
             InputHelper.InputText((i + 1) + "- " + ListadeChocolates.get(i).toString());
         }
-        int escolha = InputHelper.pegarNumeroNaRange("Digite o número da bebida: ", 1, ListadeChocolates.size());
+        int escolha = InputHelper.pegarNumeroNaRange("Digite o número do chocolate: ", 1, ListadeChocolates.size());
         itens.add(ListadeChocolates.get(escolha - 1));
-        InputHelper.InputText("Bebida adicionada!");
+        InputHelper.InputText("Chocolate adicionado!");
     }
 
     private static void escolherFolhagem(List<Object> itens) {

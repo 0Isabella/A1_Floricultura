@@ -1,4 +1,4 @@
-import View.Menu;
+import Model.Buque;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +12,5 @@ public class Main {
         Controle-
         View - InputHelper
         */
-
-        Menu.MenuPrincipal();
     }
 }

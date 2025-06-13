@@ -46,7 +46,7 @@ public abstract class Extras {
 
         if (escolha >= 0 && escolha < listaExtras.size()) {
             Extras itemEscolhido = listaExtras.get(escolha);
-            System.out.println("| Você escolheu:");
+            System.out.println("| Você escolheu: ");
 
             if (itemEscolhido instanceof Cartao) {
                 Cartao cartao = (Cartao) itemEscolhido;

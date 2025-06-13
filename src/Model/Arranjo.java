@@ -21,44 +21,4 @@ public class Arranjo extends Buque{
         getFlores().remove(flor);
     }
 
-
-    public int calcularPrecoTotal() {
-        int precoFlores = flores.stream().mapToInt(Flor::getPrecoUnidade).sum();
-        int custoExtras = comVaso ? 200 : 0; // Custo do vaso
-        custoExtras += comEspumaFloral ? 100 : 0; // Custo da espuma floral
-
-        return precoBase + precoFlores + custoExtras;
-    }
-
-
-
-    public List<Flor> getFlores() {
-        return new ArrayList<>(flores); // Retorna cópia para evitar modificações externas
-    }
-
-    public boolean isComVaso() {
-        return comVaso;
-    }
-
-    public boolean isComEspumaFloral() {
-        return comEspumaFloral;
-    }
-
-    public Cartao getCartao() {
-        return cartao;
-    }
-
-    public int getPrecoBase() {
-        return precoBase;
-    }
-
-    public void setPrecoBase(int precoBase) {
-        this.precoBase = precoBase;
-    }
-
-    @Override
-    public String toString() {
-        return String.format("Arranjo: %s\nDescrição: %s\nPreço Total: R$%d\nFlores incluídas: %d\nInclui vaso: %s\nInclui espuma floral: %s",
-                nome, descricao, calcularPrecoTotal(), flores.size(), comVaso ? "Sim" : "Não", comEspumaFloral ? "Sim" : "Não");
-    }
 }
